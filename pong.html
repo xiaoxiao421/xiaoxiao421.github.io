@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Pong</title>
+  <link rel="stylesheet" href="css/pong.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Simple Pong</h1>
+      <div class="scoreboard">
+        <div id="leftScore" class="score">0</div>
+        <div class="center">—</div>
+        <div id="rightScore" class="score">0</div>
+      </div>
+    </header>
+
+    <main>
+      <canvas id="gameCanvas" width="900" height="500"></canvas>
+    </main>
+
+    <footer>
+      <div class="controls">
+        Controls: Move mouse over canvas, or use Arrow Up / Arrow Down.
+        <button id="restartBtn">Restart</button>
+        <button id="pauseBtn">Pause</button>
+      </div>
+      <div class="info">First to 10 wins (you can change targetScore in js).</div>
+    </footer>
+  </div>
+
+  <script src="js/pong.js"></script>
+</body>
+</html>
